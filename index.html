@@ -1,29 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Alex Crits-Christoph</title>
 
     <link rel="icon" 
       type="image/png" 
       href="./icon_648.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-      <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
 
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <meta name="description" content="I'm an undergraduate at Johns Hopkins University with experience in microbiology, genomics, web development, and bioinformatics.">
-
-    <!-- Bootstrap core CSS -->
-    <link href="./bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron-narrow.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+    .choice:hover{
+        text-decoration: underline;
+        cursor:pointer;
+    }
+    .active_choice{
+        text-decoration: underline;
+
+    }
+    </style>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+    $( document ).ready(function() {
+        
+        $(".choice").on("click", function(){
+            if ($(this).hasClass("active_choice")){
+
+            }
+            else {
+                $('.choice').removeClass("active_choice");
+                $(this).addClass("active_choice");
+
+                if ($(this).text() == 'Projects'){
+                    $("#pubs").hide();
+                    $("#projects").show();
+                }
+                else {
+                    $("#projects").hide();
+                    $("#pubs").show();
+                }
+            }
+        });
+    });
+    </script>
 
 
 <script>
@@ -36,72 +76,74 @@
   ga('send', 'pageview');
 
 </script>
+</head>
 
-  </head>
+<body style="margin-top:0;padding-top:0;">
 
-  <body>
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
- <span style="color:#8c8c8c;"><a id="genome" href="http://www.ncbi.nlm.nih.gov/nuccore/428205073?report=fasta" style="color:#8c8c8c;">TTTGTCGATCGCGATCGCTGCGATCGAATAAGAGTTTG<br>
-  GTAGATTAGTTAACCTATCCCTATTTTGACAGCTAACA</a></span>
-          </ul>
+    <!-- Page Content -->
+    <div class="container" style="margin-top:0;padding-top:0;">
 
-        <h3 style="color:#4d4d4d; font-size:1.2em;padding-bottom:5px;"><a id="heading_top" href="http://alexcritschristoph.github.io/">Alex Crits-Christoph</a></h3>
-      </div>
+        <!-- Page Header -->
+        <div class="row" style="margin-top:0;padding-top:0;">
+            <div class="col-lg-12" style="margin-top:0;padding-top:0;">
+                <h1 class="page-header" style="margin-top:20px;margin-bottom:10px;font-size:2em;">Alex Crits-Christoph
+                </h1>
+    <div class="row" style="margin-top:0;padding-top:0;margin-bottom:10px;">
+         <ul class="nav nav-pills" style="margin-top:0;padding-top:0;margin-left:15px;">
+          <li  style="background:#222;color:white;margin-right:4px;" class="active"><a  style="background:#222;color:white;height:32px;line-height:25px;padding-top:3px;" href="/">About</a></li>
+          <li style="margin-right:4px;"><a href="mailto:crits-christoph@berkeley.edu" style="color:#222;height:32px;line-height:25px;padding-top:3px;"><i class="fa fa-envelope-o"></i></a></li>          
+          <li style="margin-right:4px;"><a href="https://github.com/alexcritschristoph" style="color:#222;height:32px;line-height:25px;padding-top:3px;"><i class="fa fa-github"></i></a></li>
 
-      <div class="jumbotron" style="padding-bottom:20px;">
-      <div class="row">
-      <div class=" col-md-3" style="top:-10px;">
-      <img class="thumbnail" src="alexpic.jpg" style="height:200px;margin-bottom:0px;margin-left:20px;">
-      </div>
-        <p class="lead col-md-9">I am an undergraduate  in Biophysics at Johns Hopkins University. My interests include genomics, microbiome research, bioinformatics, ecology and evolution, biotechnology, web development, and statistics. </p>
-        <a href="mailto:acritsc1@jhu.edu" id="heading" style="font-size:2em;"><i class="fa fa-envelope-o"></i></a>
-        <a href="https://github.com/alexcritschristoph"  id="heading" style="font-size:2.1em;margin-left:20px;"><i class="fa fa-github"></i></a>
+        </ul>
+    </div>
 
-      </div>
-      </div>
+                <p>I am currently a graduate student in Microbiology at University of Calfornia, Berkeley. <br>
+                <div class="row">
+                    <div class=" col-md-2">
+                      <img class="thumbnail" src="alexpic.jpg" style="height:200px;margin-top:5px;margin-bottom:0px;margin-left:0px;">
+                    </div>
 
-      <div class="row">
-        <div class="col-lg-6">
-          <h4><a href="#" id="heading">Experience</a></h4>
-          <p>Since January 2015, I have worked as a Data Analyst for <a href="http://www.secondgenome.com/">Second Genome</a>, both analyzing and creating visualization tools for microbiome research, and worked there full-time from May-August 2015.</p>
-          <p>Since 2012, I have been working with <a href="http://www.bio.jhu.edu/diruggiero/lab/index.htm">Dr. Jocelyne DiRuggiero's lab</a> in microbial genomics at Johns Hopkins, where I characterize and study microbiomes of extreme environments. I use current software in computational ecology such as <a href="http://qiime.org/">QIIME</a> to analyze diversity and taxonomic composition of large datasets of 16S rRNA samples, and I infer statistical correlations and patterns in this data using R. </p>
-          <p>I also analyze metagenomic data and infer metabolic properties of microbial communities from metagenomic data. This work involves metagenomic assembly, genome reconstruction, gene annotation, and metabolic profiling.</p>
-          <p>In Summer 2014, I was accepted to Google Summer of Code, and as part of this program I designed and developed an exploratory web interface for the Cancer Variants Database (Can-VD), a dataset created by the <a href="http://baderlab.org/">Bader Lab</a> at the University of Toronto.</p>
+                    <div class="col-md-10">
+                        <div style="padding-top:0px;"><b>Interests</b></div>
+                        Computational analysis of microbiomes; evolution and ecology of microbes and viruses; CRISPR genome editing; bioinformatics software and web development; statistics and machine learning applied to genomics.<br>
+                        <div style="padding-top:5px;"><b>Past</b></div>BA in Biophysics from Johns Hopkins (2016)<br>2015-<i>current</i> - data analysis @ <a href="#">Second Genome</a>,<br>2016 summer - genomics @ <a href="#">Caribou Biosciences</a>,<br>2012-2016 - microbial genomics @ <a href="#">DiRuggiero lab at JHU</a>,<br>2014 - Google Summer of Code. </p>
+                        <p>In the past I have collaborated on individual projects with Marc Halushka, Gary Bader and Mohammed Helmy, and Rachel Karchin. My email and Github are at the top of this page.</p>
+                    </div>
+                    </div>
+                
+                <div style="padding-top:5px;padding-bottom:5px;"><b><span class="choice active_choice">Publications</span> / <span class="choice">Projects</span></b></div>
+                <div id="pubs" class="col-lg-8" style="padding-left:0;margin-left:0;font-size:0.9em;">
+                <p><b>Crits‐Christoph, Alexander</b>, Diego R. Gelsinger, Bing Ma, Jacek Wierzchos, Jacques Ravel, Alfonso Davila, M. Cristina Casero, and Jocelyne DiRuggiero. "<a href="http://onlinelibrary.wiley.com/doi/10.1111/1462-2920.13259/pdf">Functional interactions of archaea, bacteria, and viruses in a hypersaline endolithic community.</a>" Environmental Microbiology (2016).</p>
 
-          <p>In 2013, I worked with <a href="http://karchinlab.org/">Dr. Rachel Karchin's lab</a> at the Institute for Computational Medicine on a project analyzing networks of mutation relationships in TEM B-lactamase from an ancestral phylogeny in order to describe the evolution of antibiotic resistance.</p>
-          <p>In Summer 2011, I collaborated with the Plotkin Research Group at the University of Pennsylvania on computing entropy of the Influenza HA protein using protein sequence and structure data.</p>
-          <h4><a href="#" id="heading">Awards</a></h4>
-          <p>Spring 2014: JHU Business Plan Competition (<a href="http://pages.jh.edu/~bpc/">General Business</a>) - 1st place, $6,000.</p>
-          <p>Summer 2013: Johns Hopkins Provost Undergraduate Research Award, $2,500 - for an independent research project on exposure of endolithic communities to UV light. </p>          
-          <p>Fall 2013: HopHacks - Best Social Innovation Hack at the Hopkins 2013 Fall Hackathon for co-creating a web app to help researchers access genomic data.</p>          
-        </div>
+                <p><b>Crits-Christoph, Alexander</b>, Courtney K. Robinson, Bing Ma, Jacques Ravel, Jacek Wierzchos, Carmen Ascaso, Octavio Artieda, Virginia Souza-Egipsy, M. Cristina Casero, and Jocelyne DiRuggiero. "<a href="http://journal.frontiersin.org/article/10.3389/fmicb.2016.00301">Phylogenetic and functional substrate specificity for endolithic microbial communities in hyper-arid environments.</a>" Frontiers in Microbiology 7 (2016).</p>
 
-        <div class="col-lg-6" >
-          <h4><a href="#" id="heading">Projects</a></h4>
-          <p><a href="http://canvd.baderlab.org/">Can-VD - The Cancer Variants Database</a> allows users to explore the effects of over 800,000 missense mutations on PPI interactions, as mediated by wildtype and variants protein sequences.</p>
-          <p><a href="http://www.sequebase.com">SequeBase</a> - A bioinformatics project seeking to improve the way researchers access genomic and proteomic data.</p>
-          <p>An experimental <a href="http://challengepost.com/software/brand-killer">augmented reality AdBlock</a>, created using a custom head-mounted display and OpenCV image processing with Python. Placed in top 30 hacks @ PennApps. Read more: <a href="http://motherboard.vice.com/read/this-helmet-is-an-adblock-for-real-life-ads?utm_source=mbtwitter">VICE</a>, <a href="http://www.wired.com/2015/01/adblock-real-life-adblock-real-life/">Wired</a>, <a href="https://news.ycombinator.com/item?id=8925019">HackerNews Discussion</a></p>
-          <p><a href="http://alexcrits-christoph.com/AezonWeb/">Aezon</a> - A team of Johns Hopkins students selected as one of 10 finalists in the $10 million Qualcomm Tricorder X-Prize, a competition to built a medical system capable of diagnosing a user of 15 diseases and conditions. I was in charge of development and operations of the servers which store and analyze patient data.</p>
-          <p><a href="http://phagesdb.org/phages/Abed/">Novel Mycobacteriophage characterization</a></p>
-          <h4><a href="#" id="heading">Publications</a></h4>
-          <p>Crits‐Christoph, Alexander, Diego R. Gelsinger, Bing Ma, Jacek Wierzchos, Jacques Ravel, Alfonso Davila, M. Cristina Casero, and Jocelyne DiRuggiero. "<a href="http://onlinelibrary.wiley.com/wol1/doi/10.1111/1462-2920.13259/abstract">Functional interactions of archaea, bacteria, and viruses in a hypersaline endolithic community.</a>" Environmental Microbiology (2016).</p>
-          <p>Crits-Christoph, Alexander, Courtney K Robinson, Bing Ma, Jacques Ravel, Jacek Wierzchos, Carmen Ascaso, Octavio Artieda, Virginia Souza-Egipsy, M. Cristina Casero, and Jocelyne DiRuggiero. "<a href="http://dx.doi.org/10.3389/fmicb.2016.00301">Phylogenetic and functional substrate specificity for endolithic microbial communities in hyper-arid environments.</a>" Frontiers in Microbiology (2016).</p>
-          <p> McCall, M. N., Baras, A. S., Crits-Christoph, A., Ingersoll, R., McAlexander, M. A., Witwer, K. W., & Halushka, M. K. (2016). A benchmark for microRNA quantification algorithms using the OpenArray platform. BMC Bioinformatics, 17(1), 1–13. http://doi.org/10.1186/s12859-016-0987-8</p>
-          <p>Crits-Christoph, Alexander, Courtney K. Robinson, Tyler Barnum, W. Florian Fricke, Alfonso F. Davila, Bruno Jedynak, Christopher P. McKay, and Jocelyne DiRuggiero. "<a href="http://www.microbiomejournal.com/content/1/1/28">Colonization patterns of soil microbial communities in the Atacama Desert.</a>" Microbiome 1, no. 1 (2013): 28.</p>
+                <p>McCall, Matthew N., Alexander S. Baras, <b>Alexander Crits-Christoph</b>, Roxann Ingersoll, Melissa A. McAlexander, Kenneth W. Witwer, and Marc K. Halushka. "<a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0987-8">A benchmark for microRNA quantification algorithms using the OpenArray platform.</a>" BMC bioinformatics 17, no. 1 (2016): 1.</p>
 
-          <p>Robinson, Courtney K., Jacek Wierzchos, Celeste Black, Alexander Crits-Christoph, Bing Ma, Jacques Ravel, Carmen Ascaso et al. "<a href="http://onlinelibrary.wiley.com/doi/10.1111/1462-2920.12364/abstract">Microbial diversity and the presence of algae in halite endolithic communities are correlated to atmospheric moisture in the hyper-arid zone of the Atacama Desert</a>". Environmental Microbiology. (2014).</p>
+                <p><b>Crits-Christoph, Alexander</b>, Courtney K. Robinson, Tyler Barnum, W. Florian Fricke, Alfonso F. Davila, Bruno Jedynak, Christopher P. McKay, and Jocelyne DiRuggiero. "<a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/2049-2618-1-28">Colonization patterns of soil microbial communities in the Atacama Desert.</a>" Microbiome 1, no. 1 (2013): 28.</p>
+
+                <p>Robinson, Courtney K., Jacek Wierzchos, Celeste Black, <b>Alexander Crits-Christoph</b>, Bing Ma, Jacques Ravel, Carmen Ascaso et al. "<a href="http://onlinelibrary.wiley.com/doi/10.1111/1462-2920.12364/full">Microbial diversity and the presence of algae in halite endolithic communities are correlated to atmospheric moisture in the hyper-arid zone of the Atacama Desert</a>". Environmental Microbiology. (2014).</p>
+                </div>
+
+                <div id="projects" class="col-lg-8" style="padding-left:0;margin-left:0;font-size:1em;display:none;">
+                  <p><a href="http://dvimpact.baderlab.org/">DV-IMPACT</a> (Disease Variants' Impacts on Domain-based Protein Interactions) allows users to explore the effects of over 800,000 missense mutations on PPI interactions, as mediated by wildtype and variants protein sequences.</p>
+                  <p>An experimental <a href="http://challengepost.com/software/brand-killer">augmented reality AdBlock</a>, created using a custom head-mounted display and OpenCV image processing with Python. Placed in top 30 hacks @ PennApps. Read more: <a href="http://motherboard.vice.com/read/this-helmet-is-an-adblock-for-real-life-ads?utm_source=mbtwitter">VICE</a>, <a href="http://www.wired.com/2015/01/adblock-real-life-adblock-real-life/">Wired</a>, <a href="https://news.ycombinator.com/item?id=8925019">HackerNews Discussion</a></p>
+                  <p><a href="http://alexcrits-christoph.com/AezonWeb/">Aezon</a> - A team of Johns Hopkins students selected as one of 10 finalists in the $10 million Qualcomm Tricorder X-Prize, a competition to built a medical system capable of diagnosing a user of 15 diseases and conditions. I was in charge of development and operations of the servers which store and analyze patient data.</p>
+                </div>
+            </div>
 
         </div>
-      </div>
+        <!-- /.row -->
 
-      <div class="footer">
-      Alex Crits-Christoph, 2014.
-      <span style="font-size:3px;color:#fff;">Alexander Crits-Christoph</span>
-      </div>
 
-    </div> <!-- /container -->
-  </body>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
