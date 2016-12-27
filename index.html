@@ -41,29 +41,7 @@
 
     <script src="js/jquery.js"></script>
 
-    <script>
-    $( document ).ready(function() {
-        
-        $(".choice").on("click", function(){
-            if ($(this).hasClass("active_choice")){
 
-            }
-            else {
-                $('.choice').removeClass("active_choice");
-                $(this).addClass("active_choice");
-
-                if ($(this).text() == 'Projects'){
-                    $("#pubs").hide();
-                    $("#projects").show();
-                }
-                else {
-                    $("#projects").hide();
-                    $("#pubs").show();
-                }
-            }
-        });
-    });
-    </script>
 
 
 <script>
@@ -101,34 +79,43 @@
                 <p>I am currently a graduate student in Microbiology at University of Calfornia, Berkeley. <br>
                 <div class="row">
                     <div class=" col-md-2">
-                      <img class="thumbnail" src="alexpic.jpg" style="height:200px;margin-top:5px;margin-bottom:0px;margin-left:0px;">
+                      <img class="thumbnail" src="alexpic.jpg" style="height:200px;margin-top:5px;margin-bottom:0px;margin-left:-5px;">
                     </div>
 
                     <div class="col-md-10">
                         <div style="padding-top:0px;"><b>Interests</b></div>
-                        Computational analysis of microbiomes; evolution and ecology of microbes and viruses; CRISPR genome editing; bioinformatics software and web development; statistics and machine learning applied to genomics.<br>
-                        <div style="padding-top:5px;"><b>Experience</b></div>BA in Biophysics from Johns Hopkins (2016)<br>2015-<i>current</i> - data analysis @ <a href="http://secondgenome.com/">Second Genome</a>,<br>2016 summer - genomics @ <a href="http://cariboubio.com/">Caribou Biosciences</a>,<br>2012-2016 - microbial genomics @ <a href="http://krieger2.jhu.edu/biology/labs/diruggiero/lab/index.html">DiRuggiero lab at JHU</a>,<br>2014 - Google Summer of Code. </p>
+                        Computational analysis of microbial communities; evolution and ecology of microbes and viruses; CRISPR genome editing; bioinformatics software and web development; statistics and machine learning applied to genomics.<br>
+                        <div style="padding-top:5px;"><b>My past</b></div>BA in Biophysics from Johns Hopkins (2016)<br>2015-2016 - data analysis @ <a href="http://secondgenome.com/">Second Genome</a>,<br>2016 summer - genome informatics @ <a href="http://cariboubio.com/">Caribou Biosciences</a>,<br>2012-2016 - microbial genomics @ <a href="http://krieger2.jhu.edu/biology/labs/diruggiero/lab/index.html">DiRuggiero lab at JHU</a>,<br>2014 - Google Summer of Code. </p>
                         <p>In the past I have collaborated on individual projects with Marc Halushka, Gary Bader and Mohammed Helmy, and Rachel Karchin. My email and Github are at the top of this page.</p>
                     </div>
                     </div>
                 
-                <div style="padding-top:5px;padding-bottom:5px;"><b><span class="choice active_choice">Publications</span> / <span class="choice">Projects</span></b></div>
-                <div id="pubs" class="col-lg-8" style="padding-left:0;margin-left:0;font-size:0.9em;">
+                <div class="row">
+                <div id="pubs" class="col-lg-6" style="padding-left:0;margin-left:0;">
+                <b><span class="choice">Publications</span> </b>
+                <div style="font-size:0.9em;padding-top:5px;">
+                <p>Helmy, Mohamed, <b>Alexander Crits-Christoph</b>, and Gary D. Bader. "<a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005128">Ten Simple Rules for Developing Public Biological Databases.</a>" PLoS Comput Biol 12, no. 11 (2016): e1005128.</p>
+
                 <p><b>Crits‐Christoph, Alexander</b>, Diego R. Gelsinger, Bing Ma, Jacek Wierzchos, Jacques Ravel, Alfonso Davila, M. Cristina Casero, and Jocelyne DiRuggiero. "<a href="http://onlinelibrary.wiley.com/doi/10.1111/1462-2920.13259/pdf">Functional interactions of archaea, bacteria, and viruses in a hypersaline endolithic community.</a>" Environmental Microbiology (2016).</p>
 
                 <p><b>Crits-Christoph, Alexander</b>, Courtney K. Robinson, Bing Ma, Jacques Ravel, Jacek Wierzchos, Carmen Ascaso, Octavio Artieda, Virginia Souza-Egipsy, M. Cristina Casero, and Jocelyne DiRuggiero. "<a href="http://journal.frontiersin.org/article/10.3389/fmicb.2016.00301">Phylogenetic and functional substrate specificity for endolithic microbial communities in hyper-arid environments.</a>" Frontiers in Microbiology 7 (2016).</p>
 
-                <p>McCall, Matthew N., Alexander S. Baras, <b>Alexander Crits-Christoph</b>, Roxann Ingersoll, Melissa A. McAlexander, Kenneth W. Witwer, and Marc K. Halushka. "<a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0987-8">A benchmark for microRNA quantification algorithms using the OpenArray platform.</a>" BMC bioinformatics 17, no. 1 (2016): 1.</p>
+                <p>McCall, Matthew N., Alexander S. Baras, <b>Alexander Crits-Christoph</b>, Roxann Ingersoll, Melissa A. McAlexander, Kenneth W. Witwer, and Marc K. Halushka. "<a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0987-8">A benchmark for microRNA quantification algorithms using the OpenArray platform.</a>" BMC Bioinformatics 17, no. 1 (2016): 1.</p>
 
                 <p><b>Crits-Christoph, Alexander</b>, Courtney K. Robinson, Tyler Barnum, W. Florian Fricke, Alfonso F. Davila, Bruno Jedynak, Christopher P. McKay, and Jocelyne DiRuggiero. "<a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/2049-2618-1-28">Colonization patterns of soil microbial communities in the Atacama Desert.</a>" Microbiome 1, no. 1 (2013): 28.</p>
 
                 <p>Robinson, Courtney K., Jacek Wierzchos, Celeste Black, <b>Alexander Crits-Christoph</b>, Bing Ma, Jacques Ravel, Carmen Ascaso et al. "<a href="http://onlinelibrary.wiley.com/doi/10.1111/1462-2920.12364/full">Microbial diversity and the presence of algae in halite endolithic communities are correlated to atmospheric moisture in the hyper-arid zone of the Atacama Desert</a>". Environmental Microbiology. (2014).</p>
                 </div>
+                </div>
 
-                <div id="projects" class="col-lg-8" style="padding-left:0;margin-left:0;font-size:1em;display:none;">
+                <div id="projects" class="col-lg-6" style="padding-left:0;margin-left:0;font-size:1em">
+                <b><span class="choice">Projects</span></b>
+                <div style="padding-top:5px;">
                   <p><a href="http://dvimpact.baderlab.org/">DV-IMPACT</a> (Disease Variants' Impacts on Domain-based Protein Interactions) allows users to explore the effects of over 800,000 missense mutations on PPI interactions, as mediated by wildtype and variants protein sequences.</p>
                   <p>An experimental <a href="http://challengepost.com/software/brand-killer">augmented reality AdBlock</a>, created using a custom head-mounted display and OpenCV image processing with Python. Placed in top 30 hacks @ PennApps. Read more: <a href="http://motherboard.vice.com/read/this-helmet-is-an-adblock-for-real-life-ads?utm_source=mbtwitter">VICE</a>, <a href="http://www.wired.com/2015/01/adblock-real-life-adblock-real-life/">Wired</a>, <a href="https://news.ycombinator.com/item?id=8925019">HackerNews Discussion</a></p>
-                  <p><a href="http://alexcrits-christoph.com/AezonWeb/">Aezon</a> - A team of Johns Hopkins students selected as one of 10 finalists in the $10 million Qualcomm Tricorder X-Prize, a competition to built a medical system capable of diagnosing a user of 15 diseases and conditions. I was in charge of development and operations of the servers which store and analyze patient data.</p>
+                  <p><a href="http://tricorder.xprize.org/teams/aezon">Aezon</a> - A team of Johns Hopkins students selected as one of 10 finalists in the $10 million Qualcomm Tricorder X-Prize, a competition to built a medical system capable of diagnosing a user of 15 diseases and conditions. I was in charge of development and operations of the servers which store and analyze patient data.</p>
+                  </div>
+                </div>
                 </div>
             </div>
 
