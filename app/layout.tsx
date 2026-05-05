@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: 'Alex Crits-Christoph | Computational Microbiologist',
   description:
     'Computational microbiologist specializing in microbial genomics, synthetic biology, and machine learning. PhD from UC Berkeley.',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export const viewport: Viewport = {
